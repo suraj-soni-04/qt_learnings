@@ -34,13 +34,13 @@
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>140</x>
       <y>191</y>
-      <width>340</width>
-      <height>301</height>
+      <width>341</width>
+      <height>311</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
