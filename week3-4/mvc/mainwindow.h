@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "customlistmodel.h"
 #include "customtablemodel.h"
+#include <QSortFilterProxyModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,11 +20,16 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void on_sortNameButton_clicked();
+    void on_sortAgeButton_clicked();
+    void on_filterLineEdit_textChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
     CustomListModel *listModel;
     CustomTableModel *tableModel;
+    QSortFilterProxyModel *listProxyModel;
+    QSortFilterProxyModel *tableProxyModel;
 };
 
 #endif // MAINWINDOW_H
